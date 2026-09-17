@@ -66,6 +66,21 @@
         <td>$900</td>
     </tr>
 </table>
+<hr>
+<h2>Code Snippet</h2>
+<p>This snippet is a recursive method that calculates the factorial of a number. Instead of using a loop, it calls itself with a smaller value of n each time until it reaches the base case of n == 0, then the results multiply back up the call stack.</p>
+<pre>
+//pre: n >= 0
+public static int fact(int n) {
+    int result = 0;
+    if(n == 0)
+        result = 1;
+    else
+        result = n * fact(n-1);
+    return result;
+}
+</pre>
+<p>Source: <a href="https://www.cs.utexas.edu/~scottm/cs307/javacode/codeSamples/RecursionExampleDirectory.java">RecursionExampleDirectory.java</a></p>
 </body>
 <p>Check out <a href="mycity.html">my favorite city to visit</a>.</p>
 </html>
